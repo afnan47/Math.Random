@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            Rock,Paper,Scissors!
+        </title>
+        <script type="text/javascript">
+            var MyArray=["Rock","Paper","Scissors"];
+            var randomItem=MyArray[Math.floor(Math.random()*MyArray.length)];
+        function Rock()
+        {
+            if(randomItem=="Rock")
+            alert("I had too chosen Rock, Its a TIE!");
+            else if(randomItem=="Scissors")
+            alert("I had chosen Scissors,You WIN!");
+            else
+            alert("I had chosen Paper, You LOSE!");
+            document.location.reload();
+        }        
+        
+        function Scissors()
+        {
+            if(randomItem=="Rock")
+            alert("I had chosen Rock, You LOSE!");
+            else if(randomItem=="Scissors")
+            alert("I had too chosen Scissors,Its a TIE!");
+            else
+            alert("I had chosen Paper, You WIN!");
+            document.location.reload();
+        }        
+        function Paper()
+        {
+            if(randomItem=="Rock")
+            alert("I had chosen Rock, You WIN!");
+            else if(randomItem=="Scissors")
+            alert("I had chosen Scissors,You LOSE!");
+            else
+            alert("I had chosen Paper, Its a TIE!");
+            document.location.reload();
+        }        
+        </script>
+    </head>
+    <body>
+        <center>
+                <h1>Rock,Paper,Scissors Game!</h1>
+                <br>
+                <br>
+        <h2>Select Your Choice</h2>
+        <form>
+           <pre><input type="button" value="Rock" onclick="Rock()">           <input type="button" value="Paper" onclick="Paper()">           <input type="button" value="Scissors" onclick="Scissors()"></pre>
+        </form>
+    </center>
+    </body>
+</html>

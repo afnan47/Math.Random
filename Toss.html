@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Simple Coin Toss</title>
+        <script type="text/javascript">
+            var MyArray=["Head","Tails"];
+            var random=MyArray[Math.floor(Math.random()*MyArray.length)];
+    
+            function toss()
+            {
+             setInterval(alert("Its "+random),3000);
+                document.location.reload();
+            }
+            </script>
+            </head>
+            <body>
+                <center>
+                <h1>Toss A Coin</h1>
+                <br>
+                <br>
+                <form>
+                   <input type="button" onclick="toss()" value="Click here to toss a Coin">
+                </form>
+            </center>
+            </body>
+            </html>
